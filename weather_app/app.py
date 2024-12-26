@@ -7,3 +7,4 @@ app = create_app()
 if __name__ == '__main__':
     # Only call app.run() once, no need to call create_app() here again
     app.run(debug=True)
+# this is the main page
