@@ -1,0 +1,22 @@
+ {% extends "base.html" %}
+    {%block title %} Login Page {%endblock%}
+    {% block content%}
+    {% with messages=get_flashed_messages() %}
+    {% if messages %}
+        {%for msg in messages%}
+        <p>{{msg}}</p>
+        {%endfor%}
+    {% endif %}
+    {%endwith%}
+
+    <h1>Welcome {{user}}!</h1>
+    <a href="{{ url_for('logout') }}">Logout</a>
+ 
+
+  <form action="#" method="POST">
+    <p><input type="email" name="email" placeholder ='Enter the email'/></p>
+    <p><input type="submit" value="Submit"/></p>
+</form>
+
+
+      {%endblock%} 
