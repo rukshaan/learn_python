@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{%block title%}Index Page{%endblock%}
+
+{%block content%}
+<h1 style="color:brown">Other</h1>
+
+<p>{{ address }}</p>
+<p>{{ address|upper }}</p>
+<p>{{ address|lower}}</p>
+<p>{{ address|replace('l','L') }}</p>
+<p>{{ address|title}}</p>
+<p>{{ address|reverse_string}}</p>
+<p>{{ address|repeat(5)}}</p>
+{% endblock %}
